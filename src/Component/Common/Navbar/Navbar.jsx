@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="flex justify-between  items-center font-semibold mx-auto container p-4 md:p-0">
                 {/* Logo */}
                 <div>
-                    <h1 className="text-5xl text-[#005397] font-bold">RS<span className="text-[#36B0BE]">I</span>N</h1>
+                    <h1 className="text-5xl text-[#005397] font-bold font-WorkSans">RS<span className="text-[#36B0BE]">I</span>N</h1>
                 </div>
 
                 {/* Desktop Menu */}
@@ -53,7 +53,7 @@ const Navbar = () => {
             {/* Mobile Menu - Slide-in from Left */}
             <div
                 className={`${menuOpen ? "translate-x-0" : "-translate-x-full"
-                    } fixed inset-0 bg-black bg-opacity-50 md:hidden transition-all duration-300 `}
+                    } fixed inset-0 bg-black bg-opacity-50 md:hidden transition-all duration-300 z-50`}
                 onClick={toggleMenu}
             >
 
